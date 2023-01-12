@@ -15,8 +15,6 @@ let conn = mysql.createConnection({
 
 router.get("*", function (request, response) {
   console.log("접속 성공");
-  response.sendFile(
-    path.join(__dirname, "..", "bicos2", "build", "index.html")
-  );
+  response.sendFile(path.join(__dirname, "..", "bicos", "build", "index.html"));
 });
 module.exports = router;
