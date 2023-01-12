@@ -5,7 +5,7 @@ const body_parser = require("body-parser");
 const path = require("path");
 const cors = require("cors");
 
-app.use(express.static(path.join(__dirname, "bicos2", "build")));
+app.use(express.static(path.join(__dirname, "bicos", "build")));
 
 app.use(express.json());
 app.use(cors());
