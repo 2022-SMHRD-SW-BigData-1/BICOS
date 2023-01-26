@@ -9,6 +9,6 @@ app.use(express.static(path.join(__dirname, "bicos", "build")));
 
 app.use(express.json());
 app.use(cors());
-
+// 깃 사용하는거
 app.use(router);
 app.listen(3001);
